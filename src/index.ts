@@ -31,7 +31,7 @@ export default {
 		const supportedDomains = env.CORS_ALLOW_ORIGIN?.split(',').map(d => d.trim());
 		const corsHeaders: Record<string, string> = {
 			'Access-Control-Allow-Methods': 'GET, HEAD, POST, PUT, OPTIONS',
-			'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+			'Access-Control-Allow-Headers': 'Content-Type, Authorization, solana-client',
 		};
 
 		if (supportedDomains) {
